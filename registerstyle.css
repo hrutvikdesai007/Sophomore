@@ -1,0 +1,282 @@
+        <!-- Navbar (sit on top) -->
+
+body {
+    margin:0;
+    padding: 0;
+    height: 400px;
+    background: linear-gradient(to right, darkturquoise 0%, slateblue 96%);
+    background-size: cover;
+    font-family: 'Josefin Sans',sans-serif;
+}
+h1 {
+    font-family: 'Josefin Sans',sans-serif;
+}
+.user {
+    width: 120px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 420px;
+    transform: translate(-50%,-50%);
+    padding: 80px 40px;
+    box-sizing: border-box;
+  	background: white;
+}
+.loginBox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: black;
+}
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+    color: black;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+    border: none;
+    border-bottom: 1px solid beige;
+   
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+::placeholder {
+    color: rgba(0,0,255,.3);
+}
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: beige;
+    font-size: 16px;
+    background: #b71540;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover,focus {
+    background: #FD7272;
+}
+.registerBox{
+    position:absolute;
+    top:100%;
+    right:25%;
+    transform:translate(-50%,-50%);
+    width: 350px;
+    padding: 80px 40px;
+    box-sizing:border-box;
+    background:white;
+     
+}
+.user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: black;
+    text-align: center;
+}
+h5 {
+    color: black;
+}
+form p {
+    font-weight: bold;
+    color: black;
+}
+.registerBox input {
+    width: 100%;
+    margin-bottom: 20px;
+    color: black;
+}
+.registerBox input[type="text"],
+.registerBox input[type="password"],
+.registerBox input[type="number"],
+.registerBox input[type="email"],
+.registerBox input[type="double"]{
+    border: none;
+    border-bottom: 1px solid beige;
+    outline: none;
+    height: 20px;
+    color: black;
+    font-size: 16px;
+}
+::placeholder {
+    color: rgba(0,0,255,.3);
+}
+.registerBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: beige;
+    font-size: 16px;
+    background: #b71540;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.registerBox input[type="submit"]:hover,focus {
+    background: #FD7272;
+}
+.editBox {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 350px;
+    height: 420px;
+    transform: translate(-50%,-50%);
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: white;
+}
+.editBox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: black;
+}
+.editBox input {
+    width: 100%;
+    margin-bottom: 20px;
+    color: black;
+}
+.editBox input[type="text"],
+.editBox input[type="email"] {
+    border: none;
+    border-bottom: 1px solid beige;
+   
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+::placeholder {
+    color: rgba(0,0,255,.3);
+}
+.editBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: beige;
+    font-size: 16px;
+    background: #b71540;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.editBox input[type="submit"]:hover,focus {
+    background: #FD7272;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+table.a {
+    table-layout: fixed;
+    width: 800px;    
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+table.g {
+    table-layout: fixed;
+    width: 500px;    
+}
+table.h {
+    table-layout: fixed;
+    width: 500px;    
+}
+table.i {
+    table-layout: fixed;
+    width: 500px;    
+}
+table.j {
+    table-layout: fixed;
+    width: 500px;    
+}
+table.k {
+    table-layout: fixed;
+    width: 500px;    
+}
